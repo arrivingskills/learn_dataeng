@@ -7,12 +7,13 @@ authors = [
     { name = "Andy Miles", email = "arrivingskillsai@outlook.com" }
 ]
 requires-python = ">=3.13"
-dependencies = ["kafka-python-ng>=2.2"]
+dependencies = ["kafka-python-ng>=2.2", "rdflib>=7.0"]
 
 [project.scripts]
 learn-dataeng = "learn_dataeng:main"
 send-kafka-data = "learn_dataeng.send_kafka_data:main"
 receive-kafka-data = "learn_dataeng.receive_kafka_data:main"
+receive-kafka-rdf = "learn_dataeng.receive_kafka_rdf:main"
 
 [build-system]
 requires = ["uv_build>=0.10.3,<0.11.0"]
